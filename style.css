@@ -1,0 +1,219 @@
+:root {
+    --primary-color: #1b4332;   /* أخضر إغاثي داكن */
+    --primary-hover: #081c15;
+    --accent-color: #40916c;    /* أخضر زمردي للإبراز */
+    --accent-light: #52b788;
+    --bg-light: #f8f9fa;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    --white: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    direction: rtl;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 1rem 2rem;
+    color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-logo span {
+    color: var(--accent-light);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-light);
+}
+
+.nav-cta {
+    background: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.nav-cta:hover {
+    background: var(--accent-light) !important;
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(27, 67, 50, 0.85), rgba(8, 28, 21, 0.9)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200') center/cover;
+    color: var(--white);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .highlight {
+    color: var(--accent-light);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--accent-light);
+    color: var(--primary-color);
+}
+
+/* Page Hero */
+.page-hero {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.page-hero p {
+    color: var(--accent-light);
+    margin-top: 8px;
+}
+
+/* Cards & Grid */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.badge-priority {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.priority-high { background: #ff4d4d; color: white; }
+.priority-medium { background: #ffa500; color: white; }
+.priority-low { background: #2ec4b6; color: white; }
+
+.card-title {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.card-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-hover);
+    color: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer span {
+    color: var(--accent-light);
+}

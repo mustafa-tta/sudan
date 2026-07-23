@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>طلبات الاحتياجات - SADS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            نظام <span>SADS الإغاثي</span>
+        </div>
+        <div class="nav-links">
+            <a href="index .html">الرئيسية</a>
+            <a href="requests .html" class="active">طلبات الاحتياج</a>
+            <a href="contact .html">تواصل معنا</a>
+            <a href="login .html" class="nav-cta">دخول المنظمات</a>
+        </div>
+    </nav>
+
+    <div class="page-hero">
+        <h1>📊 طلبات الاحتياجات الإغاثية بالولايات</h1>
+        <p>متابعة وتنسيق توزيع القوافل الإغاثية حسب الأولوية والاحتياج العاجل</p>
+    </div>
+
+    <section class="container">
+        <div style="text-align: left; margin-bottom: 20px;">
+            <a href="add_request.html" class="btn btn-primary">➕ تقديم طلب احتياج جديد</a>
+        </div>
+
+        <div class="grid-container">
+            <!-- طلب 1 -->
+            <div class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="card-meta">📍 ولاية الجزيرة - مركز إيواء 1</span>
+                        <span class="badge-priority priority-high">أولوية قصوى</span>
+                    </div>
+                    <h3 class="card-title">سلال غذائية وأدوية أطفال</h3>
+                    <div class="card-meta">
+                        <p>👤 الجهة الطالبة: مفوضية العون الإنساني</p>
+                        <p>👥 عدد الأسر النازحة: 450 أسرة</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary" style="width:100%;" onclick="alert('تم توجيه فريق المتابعة للطلب')">🤝 تخصيص دعم</button>
+            </div>
+
+            <!-- طلب 2 -->
+            <div class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="card-meta">📍 ولاية نهر النيل - شندي</span>
+                        <span class="badge-priority priority-medium">أولوية متوسطة</span>
+                    </div>
+                    <h3 class="card-title">خيم إيواء وبطانيات</h3>
+                    <div class="card-meta">
+                        <p>👤 الجهة الطالبة: منظمة شباب المتطوعين</p>
+                        <p>👥 عدد الأسر النازحة: 200 أسرة</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary" style="width:100%;" onclick="alert('تم توجيه فريق المتابعة للطلب')">🤝 تخصيص دعم</button>
+            </div>
+
+            <!-- طلب 3 -->
+            <div class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="card-meta">📍 ولاية البحر الأحمر - بورتسودان</span>
+                        <span class="badge-priority priority-high">أولوية قصوى</span>
+                    </div>
+                    <h3 class="card-title">مستلزمات طبية ومياه صالحة للشرب</h3>
+                    <div class="card-meta">
+                        <p>👤 الجهة الطالبة: الهلال الأحمر السوداني</p>
+                        <p>👥 عدد الأسر النازحة: 800 أسرة</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary" style="width:100%;" onclick="alert('تم توجيه فريق المتابعة للطلب')">🤝 تخصيص دعم</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>نظام توزيع المساعدات للنازحين في السودان <span>(SADS)</span> © 2026</p>
+    </footer>
+
+</body>
+</html>
